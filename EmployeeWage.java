@@ -4,6 +4,6 @@ class EmployeeWage{
 		int wagePerHr = 20;
 		int fullDayHrs = 8;
 		int dailyEmpWage = wagePerHr * fullDayHrs;
-		System.out.println(dailyEmpWage);
+		System.out.println("Daily Employee's Wage :" + dailyEmpWage);
 	}
 }
