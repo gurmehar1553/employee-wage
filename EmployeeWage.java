@@ -4,6 +4,8 @@ class EmployeeWage{
 		int wagePerHr = 20;
 		int fullDayHrs = 8;
 		int dailyEmpWage = wagePerHr * fullDayHrs;
-		System.out.println("Daily Employee's Wage :" + dailyEmpWage);
+		int workDays = 20;
+		int monthlyWage = workDays * dailyEmpWage;
+		System.out.println("Monthly Employee's Wage :" + monthlyWage);
 	}
 }
