@@ -30,6 +30,6 @@ class EmployeeWage{
 		if(workHrs > 100){
 			workHrs=100;
 		}
-		System.out.println("Wages till condition  :" + workHrs*wagePerHr);
+		System.out.println("Wages till condition  :" + workHrs * wagePerHr);
 	}
 }
