@@ -5,7 +5,10 @@ class EmployeeWage{
 		int fullDayHrs = 8;
 		int dailyEmpWage = wagePerHr * fullDayHrs;
 		int workDays = 20;
-		int monthlyWage = workDays * dailyEmpWage;
-		System.out.println("Monthly Employee's Wage :" + monthlyWage);
+		int workHrs = fullDayHrs * workDays;
+		if(workHrs > 100){
+			workHrs=100;
+		}
+		System.out.println("Wages till condition  :" + workHrs*wagePerHr);
 	}
 }
