@@ -29,7 +29,6 @@ class EmployeeWage{
 			int dailyEmpWage = wagePerHr * numHrs;
 			monthlyWage += dailyEmpWage; 
 			maxDays++;
-			
 		}
 		
 		System.out.println("Monthly Employee's Wage :" + monthlyWage);
