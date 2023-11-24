@@ -1,8 +1,8 @@
 import java.util.*;
 class EmployeeWage{
 
-	public final static int IS_FULL_TIME = 2;
-	public final static int IS_PART_TIME = 3;
+	public final static int IS_FULL_TIME = 1;
+	public final static int IS_PART_TIME = 2;
 	public final static int WORK_DAYS_MONTH = 20;
 	public final static int MAX_HRS = 100;
 
@@ -16,15 +16,17 @@ class EmployeeWage{
 		while(totalHrs <= MAX_HRS && maxDays <= WORK_DAYS_MONTH){
 			int checkAtten = (int)Math.floor(Math.random()*10) % 3;
 
-			if(checkAtten == IS_FULL_TIME){
-				numHrs = 8;
+			switch(checkAtten){
+				case 1:
+					numHrs = 8;
+					break;
+				case 2:
+					numHrs = 2;
+					break;
+				default:
+					numHrs = 0;
 			}
-			else if(checkAtten == IS_PART_TIME){
-				numHrs = 2;
-			}
-			else{
-				numHrs = 0;
-			}
+
 			totalHrs += numHrs;
 			int dailyEmpWage = wagePerHr * numHrs;
 			monthlyWage += dailyEmpWage; 
